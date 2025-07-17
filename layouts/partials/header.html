@@ -1,0 +1,12 @@
+<header>
+  <a href="{{ "/" | relURL }}">
+    <img src="{{ "logo.jpeg" | relURL }}" alt="Goose Exteriors Logo" />
+  </a>
+  <h1>Goose Exteriors</h1>
+  <p>Pressure Washing You Can Trust</p>
+  <nav>
+    {{ range .Site.Menus.main }}
+      <a href="{{ .URL }}">{{ .Name }}</a>
+    {{ end }}
+  </nav>
+</header>

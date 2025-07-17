@@ -1,0 +1,111 @@
+:root {
+  --bg: #223b52;
+  --text-light: #fdf8f3;
+  --accent: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--bg);
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+header {
+  background-color: #1b2f41;
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+header img {
+  max-width: 200px;
+  margin-bottom: 1rem;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+nav a {
+  margin: 0 1rem;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ccc;
+}
+
+main {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 2rem auto;
+}
+
+.service-item {
+  background: #2d455a;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+form {
+  max-width: 400px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea, button {
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+input, textarea {
+  background: #fdf8f3;
+  color: #223b52;
+}
+
+button {
+  background: var(--accent);
+  color: #223b52;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #ddd;
+}
+
+footer {
+  background-color: #1a2a39;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #bbb;
+}
